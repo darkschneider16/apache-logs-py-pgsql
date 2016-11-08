@@ -35,22 +35,4 @@ $ createdb apache_logs
 With an empty database we can create the table which stores the data from our logs:
 
 ```
-(venvpy35) $ python create_apache_logs_schema.py -database apache_logs
-```
-
-If you connect to your database will see the table *apache_logs* created:
-
-```
-$ psql -U postgres apache_logs
-psql (9.6.1)
-Digite «help» para obtener ayuda.
-
-apache_logs=# \d apache_log
-                       Tabla «public.apache_log»
-         Columna         |            Tipo             | Modificadores 
--------------------------+-----------------------------+---------------
- id_apache_log           | integer                     | not null
- server_name             | character varying           | 
- port                    | integer                     | 
-[...]
-```
+(venvpy35) $ python 
