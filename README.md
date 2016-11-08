@@ -40,3 +40,8 @@ apache_logs=# \d apache_log
  port                    | integer                     | 
 [...]
 ```
+## Adding some data
+In the project we have an example file with 50 lines from a real apache log, with changed information, of course. We can add this line to our database with the next command:
+```
+(venvpy35) $ python add_logs_apache.py -database apache_logs -log access_reduced.log.bz2
+```
