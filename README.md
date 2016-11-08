@@ -38,7 +38,7 @@ With an empty database we can create the table which stores the data from our lo
 (venvpy35) $ python create_apache_logs_schema.py -database apache_logs
 ```
 
-If you connect to your database will see the table *apache_logs* created:
+If you connect to your database will see the table *apache_log* created:
 
 ```
 $ psql -U postgres apache_logs
