@@ -23,5 +23,5 @@ Base.metadata.create_all(db)
 DBSession = sessionmaker(bind=db)
 session = DBSession()
 
-# Commit the session for the rest of the log below 10000
+# Commit the session
 session.commit()
